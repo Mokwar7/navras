@@ -1,0 +1,246 @@
+.exch {
+    min-width: 488px;
+    width: 488px;
+    height: 580px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 24px 48px 0px rgba(16, 24, 40, 0.18);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.exch__txt {
+    color: #565656;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 120%; /* 120% */
+    text-transform: uppercase;
+    padding: 18px 0 14px;
+    background: #F3F7FA;
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+}
+
+.exch__timer {
+    margin-top: 39px;
+    width: 382px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.exch__time-cont {
+    border-radius: 10px;
+    background: linear-gradient(180deg, #FFF 87.14%, #01F4C1 87.14%);
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    width: 76px;
+    height: 68px;
+    text-align: center;
+}
+
+.exch__time-to {
+    color: #545E65;
+    font-size: 31px;
+    font-weight: 700;
+    line-height: 122.581%;
+    margin: 3px 0 0;
+}
+
+.exch__time {
+    margin: 0;
+    color: #545E65;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 140%;
+    text-transform: uppercase;
+}
+
+.exch__values {
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    gap: 11px;
+    margin-top: 33px;
+    align-items: center;
+}
+
+.exch__value {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.exch__value-name {
+    color: #545E65;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 140%;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.exch__value-price {
+    color: #545E65;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 140%;
+    margin: 0;
+}
+
+.exch__payments {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin-top: 19px;
+}
+
+.exch__payment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 1px solid #C2C2C2;
+    background: #FCFCFC;
+    width: 141px;
+    height: 50px;
+    padding: 0;
+    gap: 5px;
+    color: #4B4A47;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.exch__payment_active {
+    border: 1px solid #4B4A47;
+}
+
+.exch__labels {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+.exch__label {
+    position: relative;
+}
+
+.exch__label-text {
+    margin: 0;
+    color: #545E65;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 1px;
+}
+
+.exch__input {
+    border-radius: 5px;
+    border: 1px solid #C2C2C2;
+    background: #FFF;
+    width: 200px;
+    padding-left: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+
+.exch__input:focus {
+    outline: none;
+    border: 1px solid #4B4A47;
+}
+
+.exch__img {
+    position: absolute;
+    top: 30px;
+    left: 170px;
+}
+
+.exch__btns {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+    margin-bottom: 15px;
+}
+
+.exch__btn-connect {
+    border-radius: 5px;
+    background-color: #01F4C1;
+    width: 216px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    border: 0;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.exch__btn-buy {
+    border-radius: 5px;
+    border: 1px solid #01F4C1;
+    width: 216px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background-color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.exch__logo {
+    margin: 0 0 13px;
+    height: 19px;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 767px) {
+    .exch {
+        min-width: 350px;
+        width: 350px;
+        height: 550px;
+    }
+
+    .exch__txt {
+        font-size: 14px;
+        padding: 16px 0 12px;
+    }
+
+    .exch__timer {
+        margin-top: 25px;
+        width: 310px;
+    }
+
+    .exch__time-cont {
+        width: 60px;
+    }
+
+    .exch__payment {
+        width: 100px;
+    }
+
+    .exch__input {
+        width: 140px;
+    }
+
+    .exch__img {
+        left: 114px;
+    }
+
+    .exch__btn-connect {
+        width: 160px;
+    }
+
+    .exch__btn-buy {
+        width: 160px;
+    }
+}
+
