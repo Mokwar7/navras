@@ -207,7 +207,7 @@
     }
 }
 
-.header__container_black {
+.header__container_black .header__container {
     background-color: #13161A;
 }
 
