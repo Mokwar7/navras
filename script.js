@@ -54,3 +54,26 @@ btns.forEach((element) => {
   })
 })
 
+
+//THEME
+let toggle = document.querySelector('.toggle')
+let clickedToggle = false
+let header = document.querySelector('.header')
+let logo = document.querySelector('.header__logo')
+let main = document.querySelector('.main__container')
+
+toggle.addEventListener('click', () => {
+  if (clickedToggle) {
+    toggle.src = './src/moon-line-icon.svg'
+    logo.style.backgroundImage = "url('./src/NAVRAS.svg')";
+    clickedToggle = false
+  } else {
+    toggle.src = './src/moon-line-icon 1.svg'
+    logo.style.backgroundImage = "url('./src/NAVRAS (2).svg')";
+    clickedToggle = true
+  }
+  toggle.classList.toggle('toggle_black')
+  body.classList.toggle('body_black')
+  header.classList.toggle('header__container_black')
+  main.classList.toggle('main__container_black')
+})

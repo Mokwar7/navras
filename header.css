@@ -104,6 +104,7 @@
     display: none;
 }
 
+
 @media screen and (max-width: 1023px) {
     .header__shadow {
         display: none;
@@ -181,6 +182,7 @@
         transform: rotate(45deg);
         margin-top: -2px;
     }
+
     .header__burger_active::before {
         transform: rotate(-45deg);
     }
@@ -203,4 +205,33 @@
     .header__menu {
         margin-top: 40px;
     }
+}
+
+.header__container_black {
+    background-color: #13161A;
+}
+
+.header__container_black .header__cont{
+    background-color: #13161A;
+    color: #fff;
+}
+
+.header__container_black .header__menu-link {
+    color: #fff;
+}
+
+.header__container_black .header__btn {
+    color: #353535;
+}
+
+.header__container_black .header__burger::after {
+    background-color: #fff;
+}
+
+.header__container_black .header__burger::before {
+    background-color: #fff;
+}
+
+.header__container_black .header__shadow {
+    display: none;
 }

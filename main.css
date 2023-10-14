@@ -142,3 +142,12 @@
         padding: 15.5px 10px;
     }
 }
+
+.main__container_black .main__header_strong {
+    color: #fff;
+}
+
+.main__container_black .main__audit {
+    border: 1px solid #fff;
+    color: #fff;
+}
