@@ -61,6 +61,8 @@ let clickedToggle = false
 let header = document.querySelector('.header')
 let logo = document.querySelector('.header__logo')
 let main = document.querySelector('.main__container')
+let team = document.querySelector('.team__container')
+let roadMap = document.querySelector('.roadmap__container')
 
 toggle.addEventListener('click', () => {
   if (clickedToggle) {
@@ -76,4 +78,6 @@ toggle.addEventListener('click', () => {
   body.classList.toggle('body_black')
   header.classList.toggle('header__container_black')
   main.classList.toggle('main__container_black')
+  team.classList.toggle('team__container_black')
+  roadMap.classList.toggle('roadmap__container_black')
 })
