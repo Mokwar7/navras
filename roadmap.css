@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     width: 100%;
+    background-color: #F2F2F2;
 }
 
 .roadmap__container {
@@ -12,6 +13,7 @@
     align-items: center;
     margin-top: 100px;
     color: #1E1E1E;
+    padding-bottom: 100px;
 }
 
 .roadmap__header {
@@ -175,10 +177,14 @@
     }
 }
 
-.roadmap__container_black .roadmap__header {
+.roadmap_black {
+    background-color: #13161A;
+}
+
+.roadmap_black .roadmap__header {
     color: #fff;
 }
 
-.roadmap__container_black .roadmap__about {
+.roadmap_black .roadmap__about {
     color: #fff;
 }

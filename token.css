@@ -1,0 +1,120 @@
+.token {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.token__container {
+    width: 1180px;
+    max-width: 95%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.token__img {
+    width: 39.2%;
+    background-image: url('./src/token\ stat.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.token__cont {
+    display: flex;
+    flex-direction: column;
+    padding: 110px 0 75px;
+    width: 670px;
+    max-width: 60%;
+}
+
+.token__header {
+    color: #2C3642;
+    font-family: 'SatoshiBlack', sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 125%;
+    margin: 0;
+}
+
+.token__about {
+    margin: 20px 0 65px;
+    color: #5A5A5A;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 187.5%;
+}
+
+.token__stats {
+    display: flex;
+    flex-wrap: wrap;
+    width: 554px;
+    max-width: 100%;
+    row-gap: 20px;
+    column-gap: 32px;
+}
+
+.token__stat {
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    justify-content: center;
+    gap: 8px;
+}
+
+.token__number {
+    color: #3F8DE5;
+    font-family: 'SatoshiBlack', sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 125%;
+    letter-spacing: -0.96px;
+    text-align: center;
+    margin: 0;
+}
+
+.token__text {
+    color: #8896AB;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 150%;
+    margin: 0;
+}
+
+@media screen and (max-width: 1023px) {
+    .token__container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .token__img {
+        height: 400px;
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    .token__cont {
+        max-width: 95%;
+        padding-top: 40px;
+        align-items: center;
+    }
+
+    .token__stats {
+        justify-content: center;
+    }
+}
+
+.token__container_black .token__header {
+    color: #fff;
+}
+
+.token__container_black .token__about {
+    color: #fff;
+    opacity: 0.7;
+}
+
+.token__container_black .token__img {
+    background-image: url('./src/token\ stat\ dark.svg');
+}

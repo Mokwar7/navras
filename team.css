@@ -2,12 +2,14 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-top: 450px;
+    margin-top: 100px;
 }
 
 .team__container {
     width: 95%;
     max-width: 1200px;
+    text-align: center;
+    padding-bottom: 70px;
 }
 
 .team__header {
@@ -16,40 +18,61 @@
     font-weight: 600;
     line-height: 110%;
     letter-spacing: -2.25px;
-    margin: 0 0 50px;
+    margin: 0;
+}
+
+.team__text {
+    color: #5A5A5A;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    margin: 10px 0 50px;
 }
 
 .team__cards {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
     justify-content: center;
 }
 
 .team__card {
-    width: 285px;
+    width: 240px;
+    padding: 30px;
     color: #1E1E1E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .team__img {
-    width: 100%;
-    object-fit: contain;
+    width: 200px;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #3f8de5;
 }
 
 .team__name {
     margin: 25px 0 10px;
-    font-size: 30px;
-    font-weight: 600;
-    line-height: 120%;
-    letter-spacing: -0.9px;
+    color: #2C3642;
+    text-align: center;
+    font-family: 'SatoshiBlack', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 140%; 
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    margin: 20px 0 0;
 }
 
 .team__about {
     margin: 0;
-    font-size: 24px;
+    color: #2C3642;
+    text-align: center;
+    font-size: 14px;
     font-weight: 400;
-    line-height: 130%;
-    letter-spacing: -0.48px;
+    line-height: 171%;
+    letter-spacing: 0.14px;
 }
 
 @media screen and (max-width: 1023px) {
@@ -84,6 +107,11 @@
     }
 }
 
+.team__container_black .team__text {
+    color: #fff;
+    opacity: 0.7;
+}
+
 .team__container_black .team__header {
     color: #fff;
 }
@@ -94,4 +122,13 @@
 
 .team__container_black .team__about {
     opacity: 0.8;
+}
+
+.team__container_black .team__name {
+    color: #fff;
+}
+
+.team__container_black .team__about {
+    color: #fff;
+    opacity: 0.7;
 }

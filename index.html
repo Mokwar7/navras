@@ -10,10 +10,14 @@
     <link rel="stylesheet" href="./exchange.css">
     <link rel="stylesheet" href="./team.css">
     <link rel="stylesheet" href="./roadmap.css">
+    <link rel="stylesheet" href="./what.css">
+    <link rel="stylesheet" href="./token.css">
+    <link rel="stylesheet" href="./getin.css">
+    <link rel="stylesheet" href="./ready.css">
+    <link rel="stylesheet" href="./footer.css">
     <link rel="icon" type="image/x-icon" href="./src/favicon.svg">
 </head>
 <body>
-    <img src="./src/moon-line-icon.svg" alt="icon moon" class="toggle hover">
     <header class="header">
         <div class="header__container">
             <span class="header__center"></span>
@@ -21,10 +25,15 @@
             <span class="header__burger"></span>
             <div class="header__cont">
                 <menu class="header__menu">
-                    <a href="#" class="header__menu-link hover">stake</a>
-                    <a href="#" class="header__menu-link hover">about</a>
-                    <a href="#" class="header__menu-link hover">tokenomics</a>
+                    <a href="#" class="header__menu-link hover aboutLink">About</a>
+                    <a href="#" class="header__menu-link hover tokenomicsLink">Tokenomics</a>
+                    <a href="#" class="header__menu-link hover roadmapLink">Roadmap</a>
+                    <a href="#" class="header__menu-link hover teamLink">Team</a>
                 </menu>
+                <div class="header__toggle hover">
+                    <div class="header__toggle-dark"></div>
+                    <div class="header__toggle-light"></div>
+                </div>
                 <div class="header__social">
                     <a href="#" class="header__social-link header__social-link_x hover"></a>
                     <a href="#" class="header__social-link header__social-link_tg hover"></a>
@@ -39,125 +48,49 @@
     <section class="main">
         <div class="main__container">
             <div class="main__text">
-                <h4 class="main__subabout">Lorem ipsum dolor sit amet, consec</h4>
                 <h1 class="main__header">
                     <strong class="main__header_strong">Fastest & secure platform to buy</strong>
-                    Lorem ipsum dolor sit amet
+                    Navras
                 </h1>
-                <h3 class="main__about">eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</h3>
+                <h3 class="main__about">Lorem ipsum dolor sit amet consectetur. In mi aenean duis commodo. Blandit mauris id aliquet scelerisque at turpis lobortis amet. Feugiat dictumst aliquet condimentum libero posuere commodo. Aliquam morbi urna interdum id.</h3>
                 <div class="main__btns">
                     <a href="#" class="main__audit hover">Audit</a>
-                    <a href="#" class="main__whitepaper hover">Whitepaper<img src="./src/whitepape icon.svg" alt="icon whitepaper"></a>
+                    <a href="#" class="main__whitepaper hover"><img src="./src/whitepape icon.svg" alt="icon whitepaper" class="whitepaperImg">Whitepaper</a>
                 </div>  
             </div>
-            <form action="" class="exch">
-                <div class="exch__txt">Buy in before price increases!</div>
-                <div class="exch__timer">
-                    <div class="exch__time-cont">
-                        <p class="exch__time-to exch__day">3</p>
-                        <p class="exch__time">days</p>
-                    </div>
-                    <div class="exch__time-cont">
-                        <p class="exch__time-to exch__hrs">3</p>
-                        <p class="exch__time">hrs</p>
-                    </div>
-                    <div class="exch__time-cont">
-                        <p class="exch__time-to exch__mins">57</p>
-                        <p class="exch__time">mins</p>
-                    </div>
-                    <div class="exch__time-cont">
-                        <p class="exch__time-to exch__secs">9</p>
-                        <p class="exch__time">secs</p>
-                    </div>
-                </div>
-                <div class="exch__values">
-                    <div class="exch__value">
-                        <p class="exch__value-name">usdt raised:</p>
-                        <p class="exch__value-price">$1,194,130.12 / $1,540,000</p>
-                    </div>
-                    <div class="exch__value">
-                        <p class="exch__value-name">your purchased nvt:</p>
-                        <p class="exch__value-price">0</p>
-                    </div>
-                    <div class="exch__value">
-                        <p class="exch__value-name">your stakeable nvt:</p>
-                        <p class="exch__value-price">0</p>
-                    </div>
-                    <div class="exch__value">
-                        <p class="exch__value-name">1 ethnvt:</p>
-                        <p class="exch__value-price">$0.011</p>
-                    </div>
-                </div>
-                <div class="exch__payments">
-                    <button type="button" class="exch__payment exch__payment_active hover"><img src="./src/Ethereum.svg" alt="icon eth">eth</button>
-                    <button type="button" class="exch__payment hover"><img src="./src/usdt.svg" alt="icon usdt">usdt</button>
-                    <button type="button" class="exch__payment hover"><img src="./src/card.svg" alt="icon card">card</button>
-                </div>
-                <div class="exch__labels">
-                    <label class="exch__label">
-                        <p class="exch__label-text">Pay with ETH</p>
-                        <input type="number" placeholder="0" class="exch__input">
-                        <img src="./src/pay eth.svg" alt="icon eth" class="exch__img">
-                    </label>
-                    <label class="exch__label">
-                        <p class="exch__label-text">Receive BTCMTX</p>
-                        <input type="number" placeholder="0" class="exch__input">
-                        <img src="./src/pay btc.svg" alt="icon btc" class="exch__img">
-                    </label>
-    
-                </div>
-                <div class="exch__btns">
-                    <button class="exch__btn-connect hover" type="submit">Connect wallet</button>
-                    <button class="exch__btn-buy hover" type="submit">Buy with bnb</button>
-                </div>
-                <img src="./src/powered.svg" alt="icon powered by navras" class="exch__logo">
-            </form>
+            <img src="./src/iPhone 15.png" alt="image iPhone" class="main__img">
         </div>
-        <img src="./src/phone.svg" alt="phone img" class="main__img">
     </section>
-    <section class="team">
-        <div class="team__container">
-            <h3 class="team__header">Meet the team</h3>
-            <div class="team__cards">
-                <div class="team__card">
-                    <img src="./src/1.png" alt="photo Luis" class="team__img">
-                    <h5 class="team__name">Luis</h5>
-                    <p class="team__about">Chief Executive Officer</p>
-                </div>
-                <div class="team__card">
-                    <img src="./src/2.png" alt="photo Cody" class="team__img">
-                    <h5 class="team__name">Cody</h5>
-                    <p class="team__about">Chief Operating officer</p>
-                </div>
-                <div class="team__card">
-                    <img src="./src/3.png" alt="photo Tj" class="team__img">
-                    <h5 class="team__name">Tj</h5>
-                    <p class="team__about">Head of Partnership</p>
-                </div>
-                <div class="team__card">
-                    <img src="./src/4.png" alt="photo Stepth" class="team__img">
-                    <h5 class="team__name">Stepth</h5>
-                    <p class="team__about">Head of Crypto</p>
-                </div>
-                <div class="team__card">
-                    <img src="./src/5.png" alt="photo Pedro" class="team__img">
-                    <h5 class="team__name">Pedro</h5>
-                    <p class="team__about">Chief Technology Officer</p>
-                </div>
-                <div class="team__card">
-                    <img src="./src/6.png" alt="photo Cody" class="team__img">
-                    <h5 class="team__name">Cody</h5>
-                    <p class="team__about">Chief Operating Officer</p>
-                </div>
-                <div class="team__card">
-                    <img src="./src/7.png" alt="photo Max" class="team__img">
-                    <h5 class="team__name">Max</h5>
-                    <p class="team__about">Head of Blockchai</p>
-                </div>
-                <div class="team__card">
-                    <img src="./src/8.png" alt="photo Jess" class="team__img">
-                    <h5 class="team__name">Jess</h5>
-                    <p class="team__about">Chief Compliance Officer</p>
+    <sectiom class="what">
+        <div class="what__container">
+            <h2 class="what__header">What is NAVRAS?</h2>
+            <p class="what__text">Lorem ipsum dolor sit amet consectetur. Volutpat dignissim lectus bibendum porttitor ullamcorper. Massa non est malesuada dapibus posuere scelerisque id scelerisque tellus. Ipsum nisl malesuada risus sit iaculis. At elit elit ac mattis. Nunc urna faucibus quam ac nunc. Sapien ultrices facilisi purus suscipit malesuada sollicitudin tristique tortor. Tellus nunc nullam id eu purus id semper. Egestas consectetur donec sit purus. Vulputate scelerisque eget curabitur semper aenean ullamcorper.</p>
+            <p class="what__text">Id tincidunt tristique enim morbi gravida. Mi fames justo euismod cras felis volutpat pellentesque. Diam arcu consectetur mauris urna in. Adipiscing habitant vulputate urna sit rhoncus. Sit egestas feugiat libero fames eget dignissim tellus semper in. Hendrerit vestibulum tellus commodo iaculis. Nibh suscipit mattis ligula congue pulvinar. Posuere ut elementum lorem dictum aliquam in bibendum. Purus pretium elit dolor scelerisque. Purus neque commodo dictum quam orci eu.</p>
+        </div>
+    </sectiom>
+    <section class="token">
+        <div class="token__container">
+            <div class="token__img"></div>
+            <div class="token__cont">
+                <h3 class="token__header">Tokenomics</h3>
+                <p class="token__about">42.5% of the BTCMTX token will be used to fund the bitcoin mining operations of Bitcoin Minetrix. 35% of the token will be allocated to marketing efforts and growing BTCMTX. 15% is allocated to community rewards for active participation in the project . 7.5 % is for BTCMTX staking rewards until the Bitcoin Minetrix clound mining platform is developed</p>
+                <div class="token__stats">
+                    <div class="token__stat">
+                        <p class="token__number">42.5%</p>
+                        <div class="token__text">Bitcoin Mining</div>
+                    </div>
+                    <div class="token__stat">
+                        <p class="token__number">35.0%</p>
+                        <div class="token__text">Marketing</div>
+                    </div>
+                    <div class="token__stat">
+                        <p class="token__number">0%</p>
+                        <div class="token__text">Community</div>
+                    </div>
+                    <div class="token__stat">
+                        <p class="token__number">7.5%</p>
+                        <div class="token__text">Staking</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -223,6 +156,120 @@
             </div>
         </div>
     </section>
+    <section class="team">
+        <div class="team__container">
+            <h3 class="team__header">Meet our dedicated team</h3>
+            <p class="team__text">Lorem ipsum dolor sit amet consectetur. Volutpat dignissim lectus bibendum porttitor ullamcorper. Massa non est malesuada dapibus posuere scelerisque id scelerisque tellus.</p>
+            <div class="team__cards">
+                <div class="team__card">
+                    <img src="./src/Ellipse 17 (1).png" alt="photo Luis" class="team__img">
+                    <h5 class="team__name">LUIS FIGUEROA</h5>
+                    <p class="team__about">Chief Executive Officer</p>
+                </div>
+                <div class="team__card">
+                    <img src="./src/Ellipse 17 (2).png" alt="photo Cody" class="team__img">
+                    <h5 class="team__name">CODY GLENN</h5>
+                    <p class="team__about">Chief Operating officer</p>
+                </div>
+                <div class="team__card">
+                    <img src="./src/Ellipse 17 (3).png" alt="photo Tj" class="team__img">
+                    <h5 class="team__name">THOMAS ROBERTS</h5>
+                    <p class="team__about">Head of Partnerships</p>
+                </div>
+                <div class="team__card">
+                    <img src="./src/Ellipse 17 (4).png" alt="photo Stepth" class="team__img">
+                    <h5 class="team__name">STEPHANIE VORNBERG</h5>
+                    <p class="team__about">Head of Crypto</p>
+                </div>
+                <div class="team__card">
+                    <img src="./src/Ellipse 17 (7).png" alt="photo Max" class="team__img">
+                    <h5 class="team__name">TEQUILA PETE</h5>
+                    <p class="team__about">Head of Blockchai</p>
+                </div>
+                <div class="team__card">
+                    <img src="./src/Ellipse 17 (5).png" alt="photo Pedro" class="team__img">
+                    <h5 class="team__name">Pedro</h5>
+                    <p class="team__about">Chief Technology Officer</p>
+                </div>
+                <div class="team__card">
+                    <img src="./src/Ellipse 17 (6).png" alt="photo Cody" class="team__img">
+                    <h5 class="team__name">Cody</h5>
+                    <p class="team__about">Chief Operating Officer</p>
+                </div>
+                <div class="team__card">
+                    <img src="./src/Ellipse 17 (8).png" alt="photo Jess" class="team__img">
+                    <h5 class="team__name">Jess</h5>
+                    <p class="team__about">Chief Compliance Officer</p>
+                </div>
+                <div class="team__card">
+                    <img src="./src/Ellipse 17 (9).png" alt="photo Jess" class="team__img">
+                    <h5 class="team__name">Jess</h5>
+                    <p class="team__about">Chief Compliance Officer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="getin">
+        <form action="" class="getin__form">
+            <h3 class="getin__header">Get in touch</h3>
+            <input type="text" class="getin__input" placeholder="Your Name">
+            <input type="email" class="getin__input" placeholder="Your Email">
+            <textarea type="text" class="getin__input getin__input_text" placeholder="Write Your Message"></textarea>
+            <button class="getin__btn hover">Send message</button>
+        </form>
+    </section>
+    <section class="ready">
+        <div class="ready__container">
+            <h3 class="ready__header">Get ready to buy navaras</h3>
+            <p class="ready__about">Lorem ipsum dolor sit amet consectetur. Pharetra rutrum pretium non consequat massa. Sed nulla nulla neque bibendum nulla sem egestas pharetra netus. Ornare tincidunt accumsan purus neque enim sapien. Sollicitudin commodo faucibus cras justo. Quis diam urna enim nunc a. Id elementum faucibus felis volutpat. Nunc dictum elementum eget phasellus ullamcorper volutpat volutpat. Scelerisque vel leo in augue fusce. Ac sit viverra pharetra pharetra ligula vestibulum ut elit. Phasellus suscipit enim egestas nibh elit faucibus. Hendrerit est ante eu sed nunc sit eget hendrerit.</p>
+            <a href="#" class="ready__link hover">Get started &#11016;</a>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__cont">
+                <div class="footer__links">
+                    <img src="./src/NAVRAS dark.svg" alt="logo" class="footer__logo">
+                    <p class="footer__about">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                    <div class="footer__socials">
+                        <img src="./src/Facebook.svg" alt="icon Facebook" class="footer__social hover">
+                        <img src="./src/Twitter.svg" alt="icon Twitter" class="footer__social hover">
+                        <img src="./src/Instagram.svg" alt="icon Instagram" class="footer__social hover">
+                        <img src="./src/LinkedIn.svg" alt="icon LinkedIn" class="footer__social hover">
+                        <img src="./src/YouTube.svg" alt="icon YouTube" class="footer__social hover">
+                    </div>
+                </div>
+                <nav class="footer__column">
+                    <a href="#" class="footer__link footer__link-header hover">Pages</a>
+                    <a href="#" class="footer__link hover mainLink">Home</a>
+                    <a href="#" class="footer__link hover">Stake</a>
+                    <a href="#" class="footer__link hover tokenomicsLink2">Tokenomics</a>
+                    <a href="#" class="footer__link hover teamLink2">Team</a>
+                    <a href="#" class="footer__link hover roadmapLink2">Roadmap</a>
+                </nav>
+                <nav class="footer__column">
+                    <a href="#" class="footer__link footer__link-header hover">Company</a>
+                    <a href="#" class="footer__link hover">Terms Conditions</a>
+                    <a href="#" class="footer__link hover">Privacy Policy</a>
+                    <a href="#" class="footer__link hover">Cookies</a>
+                    <a href="#" class="footer__link hover">Careers</a>
+                </nav>
+            </div>
+            <span class="footer__line"></span>
+            <form action="" class="footer__subs">
+                <div class="footer__subs-text">
+                    <h5 class="footer__subs-header">Subscribe to our newsletter</h5>
+                    <p class="footer__subs-about">The latest news, articles, and resources, sent to your inbox weekly.</p>
+                </div>
+                <label for="" class="footer__label">
+                    <input type="email" class="footer__input" placeholder="Enter Your Email">
+                    <button type="submit" class="footer__btn hover">Subscribe</button>
+                </label>
+            </form>
+            <span class="footer__line"></span>
+            <p class="footer__author">Copyright © Navaras 2023 All rights reserved</strong></p>
+        </div>
+    </footer>
     <script src="./script.js"></script>
 </body>
 </html>

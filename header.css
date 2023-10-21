@@ -2,6 +2,9 @@
     display: flex;
     justify-content: center;
     width: 100%;
+    position: fixed;
+    z-index: 5;
+    background-color: #fff;
 }
 
 .header__container {
@@ -12,11 +15,12 @@
     align-items: center;
     height: 115px;
     z-index: 5;
+    gap: 50px;
 }
 
 .header__logo {
-    height: 39px;
-    width: 197px;
+    height: 48px;
+    width: 206px;
     background-image: url('./src/NAVRAS.svg');
     background-repeat: no-repeat;
     background-position: center;
@@ -25,7 +29,7 @@
 
 .header__cont {
     display: flex;
-    gap: 35px;
+    gap: 25px;
     align-items: center;
 }
 
@@ -34,6 +38,7 @@
     gap: 25px;
     margin: 0;
     padding: 0;
+    margin-right: 30px;
 }
 
 .header__menu-link {
@@ -42,7 +47,6 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 187.5%;
-    text-transform: uppercase;
 }
 
 .header__social {
@@ -54,9 +58,10 @@
     width: 29px;
     height: 29px;
     border-radius: 50%;
+    border: 1px solid #2C3642;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-color: #fff;
 }
 
 .header__social-link_x {
@@ -75,12 +80,14 @@
     text-decoration: none;
     border-radius: 8px;
     background-color: #3F8DE5;
-    padding: 17px 25px;
+    padding: 17px 36.5px;
     color: #fff;
     text-align: center;
+    text-transform: uppercase;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 112.5%; /* 112.5% */
+    width: 77px;
 }
 
 .header__burger {
@@ -91,13 +98,68 @@
     display: none;
 }
 
+.header__toggle {
+    width: 65px;
+    height: 23px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 2px;
+    border-radius: 197px;
+    border: 1px solid #2C3642;
+    cursor: pointer;
+}
+
+.header__toggle-dark {
+    background-image: url('./src/toggle\ black.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: #fff;
+    height: 18px;
+    width: 18px;
+    padding: 2px;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+}
+
+.header__toggle-light {
+    background-image: url('./src/toggle\ light.svg');
+    transform: rotate(45deg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: #3F8DE5;
+    height: 18px;
+    width: 18px;
+    padding: 2px;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+}
+
+.header__toggle_active {
+    background-color: #2C3642;
+}
+
+.header__toggle-dark_active {
+    background-color: #3F8DE5;
+    background-image: url('./src/toggle\ black\ black.svg');
+}
+
+.header__toggle-light_active {
+    transform: rotate(225deg);
+}
+
 
 @media screen and (max-width: 1023px) {
     .header__container {
         position: fixed;
         background-color: #fff;
+        padding: 0 2.5%;
+        transition: 0.3s ease-in-out;
     }
-    
+
     .header__cont {
         position: absolute;
         visibility: hidden;
@@ -106,9 +168,8 @@
         left: -2.5%;
         right: 0;
         bottom: 0;
-        transition: 0.3s;
+        transition: 0.3s ease-in-out;
         flex-direction: column;
-        width: 100vw;
         height: calc(100vh - 115px);
         overflow-x: auto;
         background-color: #fff;
@@ -123,6 +184,7 @@
         flex-direction: column;
         text-align: center;
         margin-top: 30px;
+        margin-right: 0;
     }
 
     .header__social {
@@ -198,8 +260,16 @@
     }
 }
 
+.header__container_black {
+    background-color: #13161A;
+}
+
 .header__container_black .header__container {
     background-color: #13161A;
+}
+
+.header__container_black .header__logo {
+    background-image: url('./src/NAVRAS\ dark.svg');
 }
 
 .header__container_black .header__cont{
